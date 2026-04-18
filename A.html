@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    body{
+      padding: 0px;
+      background: linear-gradient(
+      to right, #0800FF, #9C00FF);
+      /*渐变色*/
+    }
+    .界面{
+      height: 190px;
+      width: 94%;
+      box-sizing:border-box;/*box尺寸计算方式,不改变原本大小*/
+      background: white;
+      border-radius: 10px;/*圆角*/
+      margin: 30px auto 0;
+      padding-top: 8px;
+    }
+    .title{
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;/*文本位置*/
+    }
+    .shurukuang{
+      display: flex;
+      /*box内属性水平居中*/
+      margin-top: 8px;
+      justify-content: center;
+    }
+    .输入栏{
+      border: 1px solid #E6E6E6;
+      outline: none;/*点击边框后效果,无*/
+      width: 60%;
+      height: 20px;
+      font-size: 5px;
+      border-radius: 10px 0 0 10px;
+      padding-left: 10px;
+    }
+    .按钮{
+      font-size: 8px;
+      font-weight: 600;
+      width: 35px;
+      height: 24px;
+      background: linear-gradient(
+      to right, #0800FF, #9C00FF);
+      color: #ffff;
+      border-radius: 0 10px 10px 0;
+      text-align: center;/*水平居中*/
+      line-height: 24px;/*行高,垂直居中*/
+      user-select: none;/*定义不可被选中*/
+    }
+    .选项1{
+      display: flex;
+      box-sizing: border-box;
+      margin: 25px auto 0;
+      padding: 0 10px;
+      font-size: 8px;
+      font-weight: 500;
+      width: 65%;
+      height: 20px;
+      border-radius: 10px;
+      /*属性垂直居中*/
+      align-items: center;
+      /*box内属性平分位置*/
+      justify-content:space-between;
+      box-shadow: rgba(149, 157, 169, 0.3) 0px 8px  20px;/*阴影*/
+      }
+    .xz{
+      display: flex;
+      align-items: center;
+    }
+    .xz1{
+      width: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="界面">
+    <div class="title">标题</div>
+    <div class="shurukuang">
+      <!--plac...,占位符-->
+      <input type="text" class="输入栏" placeholder="请随意输入">
+      <div class="按钮">输入</div>
+    </div>
+    
+    <div class="选项1">
+      <div class="xz">
+        <input  class="xz1" type="checkbox">
+        <span>吃饭</span>
+      </div>
+      <div class="x2">A</div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
